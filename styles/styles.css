@@ -242,6 +242,7 @@ section {
   font-weight: 700;
   color: var(--color-secondary);
 }
+
 .about-container .right-about .about-item .abt-text .small-text {
   padding-left: 3rem;
   position: relative;
@@ -249,6 +250,9 @@ section {
   font-size: 1.2rem;
   color: var(--color-grey-1);
   letter-spacing: 2px;
+}
+p.small-text{
+  margin: 8px;
 }
 .about-container .right-about .about-item .abt-text .small-text::before {
   content: "";
@@ -261,11 +265,19 @@ section {
 }
 .about-container .left-about {
   padding-right: 5rem;
+
 }
 .about-container .left-about p {
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-grey-1);
+}
+.about-container .left-about img {
+  margin-right: 1cm;
+}
+.about-container .left-about .logorouen {
+  display: flex;
+  align-items: center;
 }
 .about-container .left-about h4 {
   font-size: 2rem;
@@ -276,13 +288,18 @@ section {
   padding-bottom: 4rem;
 }
 .about-stats .progress-bars {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  display:grid;
+  grid-template-columns: 5cm 5cm;
+  grid-gap: 5rm;
+	justify-content: center;
+	align-items: center;
+  grid-row-gap: 20px;
+  
+ 
 }
 .about-stats .progress-bars .progress-bar {
   display: flex;
-  flex-direction: column;
+  
 }
 .about-stats .progress-bars .progress-bar .prog-title {
   text-transform: uppercase;
