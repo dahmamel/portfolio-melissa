@@ -273,11 +273,14 @@ p.small-text{
   color: var(--color-grey-1);
 }
 .about-container .left-about img {
-  margin-right: 1cm;
+  width: 70px;
+  min-width: 70px;
+  margin-right: 0.5cm;
+  margin-top: 0.2cm;
 }
 .about-container .left-about .logorouen {
   display: flex;
-  align-items: center;
+  align-items:flex-start;
 }
 .about-container .left-about h4 {
   font-size: 2rem;
@@ -853,7 +856,8 @@ p.small-text{
   .container {
     padding: 7rem 11rem;
   }
-
+  
+  }
   .contact-content-con {
     flex-direction: column;
   }
@@ -884,7 +888,7 @@ p.small-text{
     grid-template-columns: repeat(2, 1fr);
     margin-top: 6rem;
   }
-
+  
   .portfolios {
     grid-template-columns: repeat(2, 1fr);
   }
