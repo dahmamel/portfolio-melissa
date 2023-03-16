@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #000000;
-  --color-secondary: rgb(69, 2, 2);
+  --color-secondary: rgb(112, 5, 5);
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -203,6 +203,7 @@ section {
 .header-content .right-header .name span {
   color: var(--color-secondary);
   font-size: 3rem;
+  text-shadow: 4px 4px 4px #ede1e1c8;
 }
 .header-content .right-header p {
   margin: 1.5rem 0;
@@ -302,7 +303,7 @@ p.small-text{
   margin-right: 0.5cm;
   margin-top: 0.2cm;
 }
-.about-container .left-about .logorouen {
+.logorouen {
   display: flex;
   align-items:flex-start;
 }
@@ -527,17 +528,21 @@ p.small-text{
   opacity: 1;
   transform: scale(1);
 }
-
+.ocsilogo{
+  border-radius: 50%;
+  width: 15%;
+}
 .blogs {
   display: block;
   width: 50%;
   margin-left: 25%;
-  margin-top: 4rem;
+  margin-top: 2rem;
   position: relative;
   
 }
 .blogs .blog {
   position: relative;
+  margin-top: 1rem;
   background-color: var(--color-grey-5);
   border-radius: 5px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
@@ -735,6 +740,7 @@ p.small-text{
 .btn-con {
   display: flex;
   align-self: flex-start;
+  margin-top: 2rem;
 }
 
 .main-btn {
