@@ -6,6 +6,7 @@
 }
 
 :root {
+  --color-w: #FFFFFF;
   --color-primary: #000000;
   --color-secondary: rgb(112, 5, 5);
   --color-white: #FFFFFF;
@@ -19,20 +20,23 @@
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  --color-g:#b2becd;
 }
 
 .light-mode {
-  --color-primary: #FFFFFF;
-  --color-secondary: #000000;
-  --color-white: rgb(69, 2, 2);
+  --color-w: #FFFFFF;
+  --color-primary: #ffffff;
+  --color-secondary: #191d2b;
+  --color-white: rgb(0, 0, 0);
   --color-black: #000;
   --color-grey0: #f8f8f8;
-  --color-grey-1: #6c7983;
+  --color-grey-1: #191d2b;
   --color-grey-2: white;
-  --color-grey-3: rgb(69, 2, 2);
-  --color-grey-4: rgb(69, 2, 2);
-  --color-grey-5: #f8f8f8;
+  --color-grey-3: rgb(0, 0, 0);
+  --color-grey-4: rgb(0, 0, 0);
+  --color-grey-5: #050404;
   --color-grey-6: #12181b;
+  --color-g: rgb(0, 0, 0);
 }
 
 body {
@@ -325,18 +329,14 @@ p.small-text{
   
  
 }
-.about-stats .progress-bars .progress-bar {
-  display: flex;
-  
-}
-.about-stats .progress-bars .progress-bar .prog-title {
+
+.about-stats .progress-bars  .prog-title {
   text-transform: uppercase;
   font-weight: 500;
+  position: relative;
+  text-align: center;
 }
-.about-stats .progress-bars .progress-bar .progress-con {
-  display: flex;
-  align-items: center;
-}
+
 .about-stats .progress-bars .progress-bar .progress-con .prog-text {
   color: var(--color-grey-2);
 }
@@ -437,12 +437,15 @@ p.small-text{
   font-weight: 600;
 }
 .timeline .timeline-item h5 span {
-  color: var(--color-grey-2);
+  color: var(--color-g);
   font-weight: 500;
   font-size: 1.2rem;
 }
 .timeline .timeline-item p {
   color: var(--color-grey-2);
+}
+.timeline .timeline-item .noir{
+  color: var(--color-g);
 }
 
 .port-text {
@@ -488,7 +491,7 @@ p.small-text{
 
 .portfolios .portfolio-item .hover-items h3 {
   font-size: 1.5rem;
-  color: var(--color-white);
+  color: var(--color-w);
   margin-bottom: 1.5rem;
 }
 .portfolios .portfolio-item .hover-items .icons {
@@ -522,8 +525,16 @@ p.small-text{
 .portfolios .portfolio-item .blog-text {
   margin-top: -7px;
   padding: 1.1rem;
+  color: var(--color-w);
   border-top: 8px solid var(--color-secondary);
 }
+.portfolios .portfolio-item .blog-text p {
+padding-top: 2rem;
+}
+.portfolios .portfolio-item .blog-text .c {
+  padding-top: 3.5rem;
+}
+
 .portfolio-item:hover .hover-items {
   opacity: 1;
   transform: scale(1);
@@ -632,14 +643,16 @@ p.small-text{
   margin-bottom: 0.7rem;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+  color: var(--color-w);
 }
 .blogs .blog .blog-text h4:hover {
-  color: var(--color-secondary);
+  color: var(--color-w);
 }
 .blogs .blog .blog-text p {
-  color: var(--color-grey-2);
+  color: var(--color-w);
   line-height: 2rem;
   padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 
 .contact-content-con {
@@ -683,8 +696,8 @@ p.small-text{
 .contact-content-con .left-contact .contact-icon a {
   display: flex;
   align-items: center;
-  color: var(--color-white);
-  background-color: var(--color-grey-5);
+  color: var(--color-w);
+  background-color: var(--color-secondary);
   cursor: pointer;
   justify-content: center;
   width: 50px;
